@@ -136,11 +136,11 @@ def merge_data(keys, data)
   keys.collect do |hash|
     binding.pry
     data.collect do |person_hash|
-      # binding.pry
+      binding.pry
       person_hash.collect do |name, details|
-        # binding.pry
+        binding.pry
         result << details.merge(hash)
-        # binding.pry
+        binding.pry
       end 
     end 
   end 
