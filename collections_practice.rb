@@ -76,9 +76,12 @@ def organize_schools(schools)
   result = {}
   schools.collect do |school, details|
     if result.keys.include?(details[:location]) == false
-      result
+      result[details[:location]] = [school]
+    else
+      result[details[:location]] << school
     end 
   end 
+  result
 end 
 
   # let(:schools) {
