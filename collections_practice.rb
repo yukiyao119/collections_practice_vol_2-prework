@@ -131,8 +131,7 @@ end
 
 def merge_data(keys, data)
 # keys = [{:first_name=>"blake"}, {:first_name=>"ashley"}]
-keys[0]
-keys[1]
+ 
   result = []
   keys.collect do |hash|
     data.collect do |person_hash|
