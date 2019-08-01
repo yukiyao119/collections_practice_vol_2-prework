@@ -89,13 +89,6 @@ end
 #   }
 
 
-#   describe '#merge_data' do
-
-#     it 'combines two nested data structures into one' do
-#       expect(merge_data(keys, data)).to eq(merged_data)
-#     end
-
-#   end
 
 #   describe '#find_cool' do
 
