@@ -130,7 +130,7 @@ def count_elements(arr)
 end 
 
 def merge_data(keys, data)
-# keys = [{:first_name=>"blake"}, {:first_name=>"ashley"}]
+# keys = [ {:first_name=>"blake"},  {:first_name=>"ashley"}  ]
  
   result = []
   keys.collect do |hash|
