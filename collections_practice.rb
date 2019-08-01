@@ -61,13 +61,25 @@ def merge_data(keys, data)
   result
 end 
 
+def find_cool(data)
+  
+end 
 
 
-
+# let(:cool) {
+#     [
+#             {
+#                   :name => "ashley",
+#             :temperature => "sort of cool"
+#         },
+#             {
+#                   :name => "blake",
+#             :temperature => "cool"
+#         }
+#     ]
+#   }
 
 #   describe '#find_cool' do
-
-#     # Question 7
 
 #     it 'find all cool hashes' do
 #       expect(find_cool(cool)).to eq([{:name => "blake",:temperature => "cool"}])
