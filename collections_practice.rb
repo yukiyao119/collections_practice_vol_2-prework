@@ -62,9 +62,14 @@ def merge_data(keys, data)
 end 
 
 def find_cool(data)
+  result = []
   data.collect do |person|
-    binding.pry
+    # binding.pry
+    if person[:temperature] == "cool"
+      result << person
+    end 
   end 
+  result
 end 
 
 
