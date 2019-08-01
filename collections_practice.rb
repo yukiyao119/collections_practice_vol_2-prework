@@ -55,6 +55,7 @@ def merge_data(keys, data)
         # binding.pry
         if name == hash[:first_name]
           result << details.merge(hash)
+          break
         end 
         # binding.pry
       end 
