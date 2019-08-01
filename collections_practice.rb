@@ -45,7 +45,6 @@ end
 
 
 def merge_data(keys, data)
- 
   result = []
   keys.collect do |hash|
     data.collect do |person_hash|
