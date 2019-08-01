@@ -73,30 +73,8 @@ def find_cool(data)
 end 
 
 
-# let(:cool) {
-#     [
-#             {
-#                   :name => "ashley",
-#             :temperature => "sort of cool"
-#         },
-#             {
-#                   :name => "blake",
-#             :temperature => "cool"
-#         }
-#     ]
-#   }
-
-#   describe '#find_cool' do
-
-#     it 'find all cool hashes' do
-#       expect(find_cool(cool)).to eq([{:name => "blake",:temperature => "cool"}])
-#     end
-
-#   end
 
 #   describe '#organize_schools' do
-
-#     # Question 8
 
 #     it 'organizes the schools by location' do
 #       expect(organize_schools(schools)).to eq(organized_schools)
