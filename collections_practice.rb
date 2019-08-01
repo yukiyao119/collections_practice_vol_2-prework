@@ -43,6 +43,7 @@ def count_elements(arr)
   result
 end 
 
+
 def merge_data(keys, data)
  
   result = []
@@ -52,38 +53,41 @@ def merge_data(keys, data)
 
       person_hash.collect do |name, details|
         # binding.pry
-        result << details.merge(hash)
+        if name == hash[:first_name]
+          result << details.merge(hash)
+        end 
         # binding.pry
       end 
     end 
   end 
   result
 end 
-(:keys) [
-           {
-            :first_name => "blake"
-        },
-           {
-            :first_name => "ashley"
-        }
-        ]
 
-(:data) {
-    [
-           {
-             "blake" => {
-                :awesomeness => 10,
-                     :height => "74",
-                  :last_name => "johnson"
-            },
-            "ashley" => {
-                :awesomeness => 9,
-                     :height => 60,
-                  :last_name => "dubs"
-            }
-        }
-    ]
-  }
+# (:keys) [
+#           {
+#             :first_name => "blake"
+#         },
+#           {
+#             :first_name => "ashley"
+#         }
+#         ]
+
+# (:data) {
+#     [
+#           {
+#             "blake" => {
+#                 :awesomeness => 10,
+#                     :height => "74",
+#                   :last_name => "johnson"
+#             },
+#             "ashley" => {
+#                 :awesomeness => 9,
+#                     :height => 60,
+#                   :last_name => "dubs"
+#             }
+#         }
+#     ]
+#   }
 
 
 #   describe '#merge_data' do
