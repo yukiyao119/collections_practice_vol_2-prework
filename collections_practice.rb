@@ -48,9 +48,7 @@ def merge_data(keys, data)
  
   result = []
   keys.collect do |hash|
-
     data.collect do |person_hash|
-
       person_hash.collect do |name, details|
         # binding.pry
         if name == hash[:first_name]
