@@ -134,6 +134,7 @@ def merge_data(keys, data)
  
   result = []
   keys.collect do |hash|
+    binding.pry
     data.collect do |person_hash|
       # binding.pry
       person_hash.collect do |name, details|
