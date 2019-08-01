@@ -1,91 +1,5 @@
 require 'pry'
 # your code goes here
-#   let(:keys) {
-#     [
-#           {
-#             :first_name => "blake"
-#         },
-#           {
-#             :first_name => "ashley"
-#         }
-#     ]
-#   }
-
-#   let(:data) {
-#     [
-#           {
-#             "blake" => {
-#                 :awesomeness => 10,
-#                     :height => "74",
-#                   :last_name => "johnson"
-#             },
-#             "ashley" => {
-#                 :awesomeness => 9,
-#                     :height => 60,
-#                   :last_name => "dubs"
-#             }
-#         }
-#     ]
-#   }
-
-#   let(:merged_data) {
-#     [
-#           {
-#             :first_name => "blake",
-#             :awesomeness => 10,
-#                 :height => "74",
-#               :last_name => "johnson"
-#         },
-#           {
-#             :first_name => "ashley",
-#             :awesomeness => 9,
-#                 :height => 60,
-#               :last_name => "dubs"
-#         }
-#     ]
-#   }
-
-#   let(:cool) {
-#     [
-#             {
-#                   :name => "ashley",
-#             :temperature => "sort of cool"
-#         },
-#             {
-#                   :name => "blake",
-#             :temperature => "cool"
-#         }
-#     ]
-#   }
-
-#   let(:schools) {
-#     {
-#       "flatiron school bk" => {
-#         :location => "NYC"
-#       },
-#       "flatiron school" => {
-#         :location => "NYC"
-#       },
-#       "dev boot camp" => {
-#         :location => "SF"
-#       },
-#       "dev boot camp chicago" => {
-#         :location => "Chicago"
-#       },
-#       "general assembly" => {
-#         :location => "NYC"
-#       },
-#       "Hack Reactor" => {
-#         :location => "SF"
-#       }
-#     }
-#   }
-#   let(:organized_schools) {
-#     {"NYC"=>["flatiron school bk", "flatiron school", "general assembly"],
-#     "SF"=>["dev boot camp", "Hack Reactor"],
-#     "Chicago"=>["dev boot camp chicago"]}
-#   }
-
 
 def begins_with_r(arr)
   arr.all? { |element|
@@ -133,13 +47,13 @@ def merge_data(keys, data)
  
   result = []
   keys.collect do |hash|
-    binding.pry
+
     data.collect do |person_hash|
-      binding.pry
+
       person_hash.collect do |name, details|
-        binding.pry
+        # binding.pry
         result << details.merge(hash)
-        binding.pry
+        # binding.pry
       end 
     end 
   end 
