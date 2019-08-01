@@ -72,7 +72,14 @@ def find_cool(data)
   result
 end 
 
-
+def organize_schools(schools)
+  result = {}
+  schools.collect do |school, details|
+    if result.keys.include?(details[:location])
+      result
+    end 
+  end 
+end 
 
   # let(:schools) {
   #   {
