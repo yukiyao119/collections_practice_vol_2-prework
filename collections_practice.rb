@@ -62,7 +62,9 @@ def merge_data(keys, data)
 end 
 
 def find_cool(data)
-  
+  data.collect do |person|
+    binding.pry
+  end 
 end 
 
 
